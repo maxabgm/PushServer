@@ -33,7 +33,6 @@ void Remote_Client::send_msg(std::string msg)
 
     // Создаём сокет
     client_socket = socket( AF_INET, SOCK_STREAM, 0);
-    //client_socket = socket( AF_INET, SOCK_DGRAM, IPPROTO_UDP);
     if(client_socket == -1){
         qDebug() << "Невозможно создать сокет";
         return;
